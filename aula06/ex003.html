@@ -15,10 +15,10 @@
     <p>Ja me livrei da maldição</p>
 
     <script>
-         var n1 = window.prompt('Digite um número: ')
-         var n2 = window.prompt('Digite outro número: ')
+         var n1 = Number(window.prompt('Digite um número: ')) //.parseFloat para numeros quebrados e .parseInt para numeros inteiros
+         var n2 = Number(window.prompt('Digite outro número: '))
          var s = n1 + n2
-         window.alert('A soma dos valores é ' + s) // Concatenação
+         window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação
          // (number + number) para adição
          // (string + string) para concatenação
     </script>
