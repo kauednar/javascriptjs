@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIDADANIA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+             font: 2rem Arial;
+             background-color: rgb(43, 43, 43);
+             color: whitesmoke;
+             text-align: center; 
+        }
+
+        #app {
+            background-color: black;
+            padding: 100px;
+            margin: 50px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            padding-bottom: 40px;
+        }
+
+        #res{
+            padding-top: 40px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Sistema de Imigração</h1>
-    País de origem: <input type="text" name="txtpais" id="txtpais">
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="res">
-
+    <div id="app">
+        <h1>Sistema de Imigração</h1>
+        País de origem: <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res">
+        </div>
     </div>
     <script>
         function calcular() {
